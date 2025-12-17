@@ -22,5 +22,5 @@ public class Studentcontroller{
         return service.getAllStudent();
     }
     @GetMapping("/all")
-    public Studententity getStde
+    public Studententity getStuentByid()
 }
