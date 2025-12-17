@@ -21,6 +21,16 @@ public class Studentcontroller{
     public List<Studententity>getAllStudent(){
         return service.getAllStudent();
     }
-    @GetMapping("/all")
-    public Studententity getStuentByid()
+    @GetMapping("/id")
+    public Studententity getStuentById(@PathVariable Long id){
+        return service.getStuentId(id);
+    }
+    @PutMapping("/update/{id}")
+    public Studententity updateStudent(
+        @PathVariable Long id;
+        @RequestBody Studententity student
+
+    ){
+        return service.updateStudent(id,student);
+    }
 }
