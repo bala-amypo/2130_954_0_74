@@ -4,5 +4,6 @@ import com.example.demo.entity.Studententity;
 public interface Studentservice{
     Studententity addStudent(Studententity Student);
     List<Studententity>getAllStudent();
-    Studententity getStudent
+    Studententity getStudentById(Long id);
+    Studententity updateStudent(Long id,Studententity Student);
 }
