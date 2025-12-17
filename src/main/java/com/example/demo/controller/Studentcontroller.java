@@ -13,8 +13,14 @@ public class Studentcontroller{
     @Autowired
     private Studentservice service;
 
-    @PostMappung("/all")
-    public List<Studententity>getAllStudent(){
-        return service.add
+    @PostMapping("/add")
+    public Studententity addStudent(@RequestBody Studententity student){
+        return service.addStudent(student);
     }
+    @PostMapping("/all")
+    public List<Studententity>getAllStudent(){
+        return service.getAllStudent();
+    }
+    @GetMapping("/all")
+    public Studententity getStde
 }
