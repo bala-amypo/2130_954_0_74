@@ -16,6 +16,8 @@ public class Studentcontroller{
     @PostMapping("/add") //to do what is the process for that we need to give the anotations
 
     public Studententity addStudent(@RequestBody Studententity student){
+        //requestbody is need for the conversion 
+        // then the student is the 
         return service.addStudent(student);
     }
     @PostMapping("/all")
