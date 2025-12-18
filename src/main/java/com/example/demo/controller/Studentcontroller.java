@@ -17,11 +17,13 @@ public class Studentcontroller{
 
     public Studententity addStudent(@RequestBody Studententity student){
         //requestbody is need for the conversion 
-        // then the student is the 
+        //  then the student is the object that is to store the value in that and the student collects the data as the tempervary variable
         return service.addStudent(student);
+        //and this is the line were to insert the value to the student files so we have created tjis 
     }
     @PostMapping("/all")
     public List<Studententity>getAllStudent(){
+    // to list all the value of getAllstudent is the function to get all the data from the 
         return service.getAllStudent();
     }
     @GetMapping("/id")
