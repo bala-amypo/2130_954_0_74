@@ -28,6 +28,8 @@ public class Studentcontroller{
     }
     @GetMapping("/id")
     public Studententity getStuentById(@PathVariable Long id){
+        //so we have created the 5 path variable now need to send the http://student/user/5 so this will goes to the path to fetch the required variable
+        
         return service.getStuentId(id);
     }
     @PutMapping("/update/{id}")
