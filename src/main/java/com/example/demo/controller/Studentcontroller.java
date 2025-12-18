@@ -8,12 +8,13 @@ import com.example.demo.entity.Studententity;
 import com.example.demo.service.Studentservice;
 
 @RestController
-@RequestMapping("/student")
+@RequestMapping("/student") //the things that are in the "" double quoutes will comes in the API that is the swagger
 public class Studentcontroller{
     @Autowired
-    private Studentservice service;
+    private Studentservice service; // so this the object for the services
 
-    @PostMapping("/add")
+    @PostMapping("/add") //to do what is the process for that we need to give the anotations
+
     public Studententity addStudent(@RequestBody Studententity student){
         return service.addStudent(student);
     }
