@@ -11,7 +11,7 @@ import com.example.demo.service.Studentservice;
 @RequestMapping("/student") //the things that are in the "" double quoutes will comes in the API that is the swagger
 public class Studentcontroller{
     @Autowired
-    private Studentservice service; // so this the object for the services
+    private Studentservice service; // so this the object for the services folder
 
     @PostMapping("/add") //to do what is the process for that we need to give the anotations
 
